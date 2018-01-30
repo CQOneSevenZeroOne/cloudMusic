@@ -48,6 +48,9 @@ module.exports = {
             presets: ['@babel/preset-react']
           }
         }
+      },{
+      	test:/\.(eot|woff|svg|ttf)\??.*$/,
+      	loader:'url-loader?name=fonts/[name].[md5:hash:hex:7].[ext]'
       }
     ]
   },
