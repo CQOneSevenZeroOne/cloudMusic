@@ -44,7 +44,7 @@
 			}
 			#hplay>.content>ul{
 				display: flex;
-				width: 19.4rem;
+				width: 20rem;
 				height: 3.6rem;
 				justify-content: space-around;
 				line-height: 3.6rem;
@@ -56,7 +56,7 @@
 				font-size: 1.2rem;
 			}
 			#hplay>#time{
-				width: 19.4rem;
+				width: 20rem;
 				display: flex;
 				margin: 0 auto;
 			}
@@ -73,7 +73,6 @@
 				margin-top: 0.5rem;
 			}
 			#hplay>footer{
-				height: 5.6rem;
 				margin-top: 2rem;
 			}
 			#hplay>footer>ul{
@@ -85,10 +84,18 @@
 				justify-content: center;
 			}
 			#hplay>footer>ul>li>a{
-				display: inline-block;
+				display:block;
 			}
 			#hplay>footer>ul a img{
-				display:inline-block;
-				height: 3rem;
-				width: 3rem;
+				display:block;
+				/*height: 3rem;
+				width: 3rem;*/
+				width: 70%;
+				margin: 0 auto;
+			}
+			#hplay>footer>ul a .previous,#hplay>footer>ul a .next{
+				margin-top: 1.2rem;
+			}
+			#hplay>footer>ul a .loop,#hplay>footer>ul a .list{
+				margin-top: 1.3rem;
 			}
