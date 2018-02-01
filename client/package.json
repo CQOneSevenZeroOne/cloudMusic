@@ -26,12 +26,13 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-slick": "^0.17.1",
     "redux": "^3.7.2",
+    "slick-carousel": "^1.8.1",
     "style-loader": "^0.19.1",
     "text-loader": "^0.0.1",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.10.1",
-    "weui": "^1.1.2"
+    "webpack-dev-server": "^2.10.1"
   }
 }

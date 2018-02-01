@@ -52,7 +52,6 @@ module.exports = {
       	test:/\.(eot|woff|svg|ttf)\??.*$/,
       	loader:'url-loader?name=fonts/[name].[md5:hash:hex:7].[ext]'
       }
-
     ]
   },
   // 替换vue的加载路径
