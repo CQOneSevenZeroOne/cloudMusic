@@ -17,7 +17,7 @@ class Xuser_left extends React.Component{
 	}
 	render(){
 		return (
-			<div style={{position:'absolute',top:'0',width:'100%'}}>
+			<div style={{position:'absolute',top:'0',width:'100%',height:'100%',z-index:'333'}}>
 				<div id="modal" onClick={this.hide}></div>
 				<div id="c_left">
 					<header className="c_head">
