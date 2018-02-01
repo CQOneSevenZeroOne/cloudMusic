@@ -37,9 +37,7 @@ class Xlist extends React.Component {
     	 ],
     	 index:-1
     }
-    
-   
-  }
+ }
   render(){
     return(
          <div id="wlist">
@@ -71,9 +69,9 @@ class Xlist extends React.Component {
             <ul className="wmusiclist">
 	              {
 	              	 this.state.songlist.map((item, index)=> {
-		                return (<li key={index} onClick={this.playmusic.bind(this,index)}>
-		                  <audio src= {item.music} ref={this.state.index==index?'wplay':''}></audio>
-		                  <div className="wmesg">
+		                return (<li key={index} onClick={this.playmusic.bind(this,index)} >
+		                  <audio src= {item.music} ref={this.state.index==index?"wplay":""}></audio>
+		                  <div className="wmesg" >
 		                    <img src={item.img}/>
 		                   </div>
 		                    <div className="wsongmesg">
@@ -141,10 +139,13 @@ class Xlist extends React.Component {
   }
   playmusic(id){
   	 this.state.index=id;
-  	 console.log( this.state.index);
-  	 console.log(this.refs.wplay);
+  	  console.log(this.getItempla(id))
   	  this.refs.wplay.play();
   }
+   getItempla(index){
+    return index == this.state.index ? "wplay" : "";
+    
+   }
   
 }
 export default Xlist;
